@@ -1,0 +1,68 @@
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    background-color: #28a745; /* 綠色背景 */
+    color: white; /* 文字顏色為白色 */
+}
+
+.container { 
+    margin-top: 50px; 
+}
+
+.file-upload {
+    border: 2px dashed white; /* 大框框的樣式 */
+    padding: 20px;
+    width: 400px; /* 框框的寬度 */
+    height: 200px; /* 框框的高度 */
+    margin: 0 auto; /* 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer; /* 滑鼠變成指標 */
+    position: relative;
+}
+
+.file-upload p {
+    margin: 0;
+}
+
+.button-container {
+    margin-top: 40px; /* 與框框的間距 */
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* 按鈕之間的間距 */
+}
+
+.upload-button, .reset-button {
+    padding: 15px 30px; /* 按鈕大小 */
+    font-size: 18px; /* 按鈕字體大小 */
+    border: none;
+    border-radius: 12px; /* 按鈕變成圓角 */
+    cursor: pointer;
+}
+
+.upload-button {
+    color: #333;
+    background-color: #ffc107; /* 黃色按鈕 */
+}
+
+.upload-button:hover {
+    background-color: #e0a800; /* 按鈕懸停效果 */
+}
+
+.reset-button {
+    color: white;
+    background-color: #dc3545; /* 紅色按鈕 */
+}
+
+.reset-button:hover {
+    background-color: #c82333; /* 按鈕懸停效果 */
+}
+
+.loading { 
+    display: none; 
+    color: white; 
+    font-size: 18px; 
+}
