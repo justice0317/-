@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片上傳並分析</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 引入 CSS 檔案 -->
+</head>
+<body>
+    <div class="container">
+        <h1>影片上傳並分析</h1>
+        <label for="videoFile" class="file-upload" id="fileUploadLabel">
+            <p id="uploadText">請選擇影片檔案</p>
+            <video id="videoPreview" controls style="display: none; width: 100%; max-height: 180px;"></video>
+            <input type="file" id="videoFile" accept="video/*" style="display: none;" onchange="handleFileSelection()">
+        </label>
+        <div class="button-container">
+            <button class="reset-button" onclick="resetFileSelection()">重新選擇</button>
+            <button class="upload-button" onclick="uploadVideo()">上傳並分析</button>
+        </div>
+        <p class="loading" id="loadingText">請稍候，影片分析中...</p>
+    </div>
+
+    <div class="container" id="resultContainer" style="display:none;">
+        <h2>分析結果</h2>
+        <p id="analysisResult"></p>
+    </div>
+
+    <script src="script.js"></script> <!-- 引入 JavaScript 檔案 -->
+</body>
+</html>
